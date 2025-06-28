@@ -2,6 +2,8 @@
 
 An interactive 3D educational game to explore the solar system with realistic physics, responsive design, and intuitive controls. Users can zoom, pan, and explore celestial bodies with dynamic UI built for both desktop and mobile devices.
 
+---
+
 🔗 **Live Site**: [Click Here](https://abdullariaz.com/orbit)
 
 ---
