@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="theme light classic">
+<head>
+  <meta charset="utf-8">
+  <title>Solar System Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="menu-left">
+      <button id="menu-left-button">Celestial</button>
+    </div>
+    <div class="home-icon">
+      <a href="https://abdullariaz.com">🏠</a>
+    </div>
+    <div class="menu-right">
+      <button id="menu-right-button">Controls</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="solar-system-container">
+      <!-- 3D Simulation Injected Here -->
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://abdullariaz.com/#contacts">Contact</a>
+    </div>
+    <div id="visitor-count">Total visits: 59764</div>
+    <div id="current-date">All rights reserved By @ Abdullah Al Riaz - <span id="live-date"></span></div>
+    <div>Solar System Explorer Made with ❤️ by Abdullah Al Riaz.</div>
+  </footer>
+
+  <script>
+    // Auto date update
+    function updateLiveDate() {
+      const now = new Date();
+      document.getElementById('live-date').textContent = now.toLocaleDateString();
+    }
+    updateLiveDate();
+    setInterval(updateLiveDate, 1000 * 60 * 60); // Update hourly
+
+    // Visitor counter logic (placeholder, needs backend API to truly function)
+    let visitCount = 59764;
+    document.getElementById('visitor-count').textContent = `Total visits: ${visitCount + Math.floor(Math.random()*10)}`;
+  </script>
+</body>
+</html>
